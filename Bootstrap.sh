@@ -34,4 +34,5 @@ setenforce 0
 # Config to log in with RSA key.
 (umask 077 && test -d ~/.ssh || mkdir ~/.ssh)
 (umask 077 && touch ~/.ssh/authorized_keys)
-cat RSA-key.txt > ~/.ssh/authorized_keys
+cp RSA-key.txt ./authorized_keys
+mv authorized_keys ~/.ssh/authorized_keys
