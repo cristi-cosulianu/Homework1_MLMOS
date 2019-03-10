@@ -11,7 +11,7 @@ for c in ${currDate}; do
 done
 
 # Put output in a new file.
-yum check-update > /root/TEMA1/$filename
+yum check-update > ./$filename
 
 # Run system update.
 yum update
